@@ -1,5 +1,10 @@
 body {
+
     margin: 0;
+    padding: 0;
+    background-image: url('../src/images/header.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -13,7 +18,7 @@ body {
   }
   img{
     width: 200px;
-    height: 200px;
+    height: 150px;
   
   }
   .country-div{
@@ -28,19 +33,33 @@ body {
     list-style: none;
   }
   h1{
+    padding-top: 2rem;
     color: white;
     text-align: center;
+    margin-top: 0;
   }
   .display-countries{
     width: 80%;
-    margin: auto;
-    align-items: center;
-   background-image: url('../src/images/header.jpg');
-   background-repeat: repeat-y; /* for vertical repeat */
-    background-repeat: repeat-x; /* for horizontal repeat */
+    margin:0 auto;
+    text-align: center;
+    background-color: rgb(130, 187, 228);
     height:200px;
-
-
   }
+  .user-input {
+    width : 20rem;
+    height: 2.5rem;
+    padding-left : 3rem;
+    padding-right: 3rem;
+    border-radius: 1rem;
+    outline: 0;
+}
+.weather-div{
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(189, 168, 168);
+}
   
   

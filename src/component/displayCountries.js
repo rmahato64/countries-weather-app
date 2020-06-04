@@ -1,4 +1,5 @@
 import React from 'react'
+import Weather from './weather'
 import '../style.css'
 
 const DisplayCountries=(props)=>{
@@ -13,12 +14,14 @@ const DisplayCountries=(props)=>{
     return(
         <div>
         <div className="display-countries" >
-            <h1>Total Number of Countries {props.countries.length}</h1>
-            <input type='text'  value={props.inputValue} onChange={props.handle} />
+            <h1>Total Number of Countries: {props.TotalCountries.length}</h1>
+            {props.countriesdisplayed.length == 250 ? ' ' :<h3> {props.countriesdisplayed.length} Countries matches your search.</h3>}
+            <input type='text'  value={props.inputValue} onChange={props.handle} className='user-input' placeholder="Enter countries/capital/language"/>
             </div>
-            <div className='country-div' >{countryDisplay}</div>
+            <div className='country-div' >
+                {countryDisplay}
+            </div>
         </div>
     )
 }
-
 export default DisplayCountries
